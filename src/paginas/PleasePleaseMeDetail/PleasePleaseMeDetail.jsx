@@ -9,10 +9,11 @@ function PleasePleaseMeDetail() {
       {/* PAGE TITLE SECTION */}
       <div className={styles.pageTitleSection}>
         <div className={styles.pageTitleInner}>
-          <p className={styles.preTitle}>Album</p>
+          <p className={styles.preTitle}>Álbum</p>
           <h1 className={styles.pageTitle}>Please Please Me</h1>
+
           <p className={styles.subtitle}>
-            <span className={styles.fontHeavy}>Release date:</span> 22 March 1963
+            <span className={styles.fontHeavy}>Data de lançamento:</span> 22 de março de 1963
           </p>
         </div>
       </div>
@@ -24,22 +25,30 @@ function PleasePleaseMeDetail() {
           <div className={styles.quotesColumn}>
             <div className={styles.quotesSection}>
               <div className={styles.blockquote}>
-                <p>"The first album was recorded in one long twelve hour session, which the last song to be done was a song called Twist and Shout, which nearly killed me."</p>
+                <p>
+                  "O primeiro álbum foi gravado em uma única sessão de doze horas, e a última música a ser feita foi uma canção chamada Twist and Shout, que quase me matou."
+                </p>
                 <footer>John</footer>
               </div>
 
               <div className={styles.blockquote}>
-                <p>"We'd all said, 'Well what about this? What about this?', cos basically this album was just what we did live in the clubs."</p>
+                <p>
+                  "Todos nós dizíamos: 'E quanto a esta? E quanto a esta?', porque basicamente este álbum era exatamente o que fazíamos ao vivo nos clubes."
+                </p>
                 <footer>George</footer>
               </div>
 
               <div className={styles.blockquote}>
-                <p>"Oh god this is it, a piece of plastic. And this piece of plastic was like gold, you know. You'd sell your soul. You would sell your soul to get on that little record."</p>
+                <p>
+                  "Meu Deus, era isso, um pedaço de plástico. E aquele pedaço de plástico era como ouro, sabe. Você venderia sua alma. Você venderia sua alma para estar naquele pequeno disco."
+                </p>
                 <footer>Ringo</footer>
               </div>
 
               <div className={styles.blockquote}>
-                <p>"John had to save Twist and Shout until the last, and he was sucking Zoobs all day - those little throat tablets. And he finally had to do Twist and Shout knowing he had to do it last because it would just rip his throat apart to do it. It was great. You can still hear that on the record."</p>
+                <p>
+                  "John teve que deixar Twist and Shout para o final, e passou o dia inteiro tomando pastilhas para garganta. E finalmente precisou gravar Twist and Shout sabendo que tinha que ser a última porque aquilo simplesmente destruiria sua garganta. Foi incrível. Você ainda consegue ouvir isso no disco."
+                </p>
                 <footer>Paul</footer>
               </div>
             </div>
@@ -62,7 +71,7 @@ function PleasePleaseMeDetail() {
                 src="https://open.spotify.com/embed/album/3KzAvEXcqJKBF97HrXwlgf?utm_source=oembed"
                 width="100%"
                 height="352"
-                title="Spotify Embed: Please Please Me (Remastered)"
+                title="Spotify Embed: Please Please Me (Remasterizado)"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -78,7 +87,7 @@ function PleasePleaseMeDetail() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                STREAM
+                OUVIR
               </a>
               <a
                 className={styles.actionButton}
@@ -86,30 +95,30 @@ function PleasePleaseMeDetail() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                BUY THE ALBUM
+                COMPRAR O ALBUM
               </a>
             </div>
 
             {/* Description text */}
             <div className={styles.descriptionSection}>
               <p className={styles.bodyText}>
-                The Beatles' Please Please Me album was rush-released by Parlophone on 22nd March, 1963 to capitalise on the enormous success of the title track which had been the group's second single and their first no. 1 in the majority of UK charts.
+                O álbum Please Please Me dos Beatles foi lançado às pressas pela Parlophone em 22 de março de 1963 para aproveitar o enorme sucesso da faixa-título, que havia sido o segundo single do grupo e seu primeiro número 1 na maioria das paradas britânicas.
               </p>
 
               <p className={styles.bodyText}>
-                Ten of the album's fourteen tracks were recorded in just one day - 11th February, 1963. These included a mixture of stage favourites and "Lennon-McCartney originals". The four remaining songs had been committed to tape in 1962 having formed the B-side of their debut release and both sides of their second single. A slightly later recording of 'Love Me Do' to that previously released, was selected for the album. This version would also appear on a subsequent EP and later still on an American # 1 single in 1964.
+                Dez das quatorze faixas do álbum foram gravadas em apenas um dia — 11 de fevereiro de 1963. Entre elas estavam uma mistura de músicas favoritas dos shows ao vivo e composições originais da dupla Lennon-McCartney. As quatro músicas restantes haviam sido gravadas em 1962, tendo composto o lado B do lançamento de estreia da banda e os dois lados de seu segundo single. Uma gravação ligeiramente posterior de "Love Me Do" em relação à versão já lançada foi escolhida para o álbum. Essa versão também apareceria posteriormente em um EP e, mais tarde, em um single que alcançou o primeiro lugar nos Estados Unidos em 1964.
               </p>
 
               <p className={styles.bodyText}>
-                The iconic front cover shot was taken at the then headquarters of EMI Limited at 20 Manchester Square in London's West End in early 1963 by Angus McBean. EMI remained in the building until 1995 before moving to West London taking the famous balcony railing with them.
+                A icônica foto da capa foi tirada no então quartel-general da EMI Limited, localizado na 20 Manchester Square, no West End de Londres, no início de 1963, pelo fotógrafo Angus McBean. A EMI permaneceu no edifício até 1995, quando se mudou para o oeste de Londres, levando consigo a famosa grade da varanda.
               </p>
 
               <p className={styles.bodyText}>
-                Given that the UK album chart in those days tended to be dominated by more 'adult' tastes such as film soundtracks and easy listening vocalists, it was a surprise when Please Please Me hit the top of the chart in May 1963 and remained there for thirty weeks before being replaced by With The Beatles.
+                Considerando que as paradas de álbuns britânicas daquela época eram normalmente dominadas por gostos mais "adultos", como trilhas sonoras de filmes e cantores de música leve, foi uma surpresa quando Please Please Me alcançou o topo das paradas em maio de 1963 e permaneceu lá por trinta semanas, antes de ser substituído por With The Beatles.
               </p>
 
               <p className={styles.bodyText}>
-                Please Please Me didn't receive an official US release until 1987 but "Introducing The Beatles" issued early in 1964 on the Vee-Jay label and "The Early Beatles" released by Capitol Records the following year later did contain many of the songs from the British release.
+                Please Please Me não recebeu um lançamento oficial nos Estados Unidos até 1987, mas os álbuns "Introducing The Beatles", lançado no início de 1964 pela gravadora Vee-Jay, e "The Early Beatles", lançado pela Capitol Records no ano seguinte, continham muitas das músicas presentes na versão britânica.
               </p>
             </div>
 
@@ -117,7 +126,7 @@ function PleasePleaseMeDetail() {
             <div className={styles.videoEmbed}>
               <iframe
                 src="https://www.youtube-nocookie.com/embed/Dt7znOx90Fk"
-                title="The Making Of Please Please Me"
+                title="A Produção de Please Please Me"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -139,14 +148,14 @@ function PleasePleaseMeDetail() {
           <blockquote className={styles.nmeQuote}>
             <p>
               <em>
-                "The Beatles opened a copy of the NME and gazed proudly at the charts when 'Please Please Me' hit the top recently. It was a big moment for the talented boys from Liverpool, worth waiting a long time for.
+                "Os Beatles abriram um exemplar da NME e observaram orgulhosamente as paradas quando 'Please Please Me' alcançou o primeiro lugar recentemente. Foi um grande momento para os talentosos rapazes de Liverpool, algo pelo qual esperaram durante muito tempo.
                 <br /><br />
-                Things are beginning to move for the Beatles, the r-and-b styled British group. The disc 'Please Please Me' follows closely on the heels of their first hit 'Love Me Do' written by group members John Lennon and Paul McCartney.
+                As coisas estão começando a acontecer para os Beatles, o grupo britânico de estilo rhythm and blues. O disco 'Please Please Me' veio logo após o sucesso de sua primeira música de destaque, 'Love Me Do', escrita pelos integrantes John Lennon e Paul McCartney.
                 <br /><br />
-                It looks like a bright future for the Beatles, but knowing them I don't think they'll let it go to their heads."
+                Parece que um futuro brilhante aguarda os Beatles, mas conhecendo-os, não acredito que deixarão isso subir à cabeça."
               </em>
             </p>
-            <cite>NME March 8th 1963</cite>
+            <cite>NME — 8 de março de 1963</cite>
           </blockquote>
         </div>
       </div>
@@ -158,7 +167,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0006-06v2.jpg?itok=Rkkf2PIh"
-              alt="The Beatles recording Please Please Me"
+              alt="Os Beatles gravando Please Please Me"
             />
           </div>
 
@@ -166,7 +175,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0004-04v2.jpg?itok=AR732vX1"
-              alt="The Beatles recording Please Please Me"
+              alt="Os Beatles gravando Please Please Me"
             />
           </div>
 
@@ -174,7 +183,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0004-03v2_0.jpg?itok=VBUaC8Yv"
-              alt="The Beatles recording Please Please Me"
+              alt="Os Beatles gravando Please Please Me"
             />
           </div>
 
@@ -182,7 +191,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0004-02v2_0.jpg?itok=IkHRtqYV"
-              alt="Ringo recording Please Please Me"
+              alt="Ringo gravando Please Please Me"
             />
           </div>
 
@@ -190,7 +199,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0003-20v2.jpg?itok=RQsMS0bt"
-              alt="Paul and John recording Please Please Me"
+              alt="Paul e John gravando Please Please Me"
             />
           </div>
 
@@ -198,7 +207,7 @@ function PleasePleaseMeDetail() {
           <div className={styles.imageScrollSlide}>
             <img
               src="https://www.thebeatles.com/sites/default/files/styles/max_2600x2600/public/2021-08/DH-0002-09v2.jpg?itok=GQEyzUdH"
-              alt="The Beatles recording Please Please Me"
+              alt="Os Beatles gravando Please Please Me"
             />
           </div>
         </div>

@@ -1,18 +1,17 @@
 // Footer com 4 colunas (logo, redes sociais, busca, menu)
-// Apenas visual: nenhum input tem efeito, todos os links e botões são
-// puramente estáticos (não navegam, não disparam alertas).
 
+import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
 function Footer() {
   // Lista de redes sociais (igual ao site original)
   const socials = [
-    { name: 'Twitter',   short: 'X' },
-    { name: 'Instagram', short: 'I' },
-    { name: 'Facebook',  short: 'F' },
-    { name: 'TikTok',    short: 'T' },
-    { name: 'YouTube',   short: 'Y' },
-    { name: 'Snapchat',  short: 'S' },
+    { name: 'Twitter', url: 'https://twitter.com/thebeatles', icon: 'fa-twitter' },
+    { name: 'Instagram', url: 'https://www.instagram.com/thebeatles/', icon: 'fa-instagram' },
+    { name: 'Facebook', url: 'https://www.facebook.com/Beatles', icon: 'fa-facebook' },
+    { name: 'TikTok', url: 'https://tiktok.com/@thebeatles', icon: 'fa-tiktok' },
+    { name: 'YouTube', url: 'https://www.youtube.com/thebeatles', icon: 'fa-youtube' },
+    { name: 'Snapchat', url: 'https://www.snapchat.com/@thebeatles', icon: 'fa-snapchat' },
   ]
 
   return (
@@ -24,7 +23,7 @@ function Footer() {
             <div className={styles.appleLogo}>
               <strong>APPLE CORPS</strong>
               Apple Corps Ltd<br />
-              post@applecorpsltd.com
+              <a href="mailto:post@applecorpsltd.com">post@applecorpsltd.com</a>
             </div>
           </div>
 
@@ -34,9 +33,16 @@ function Footer() {
             <ul className={styles.socialList}>
               {socials.map((s) => (
                 <li key={s.name}>
-                  <span className={styles.socialLink} title={s.name} aria-label={s.name}>
-                    <span className={styles.socialIcon}>{s.short}</span>
-                  </span>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                    title={s.name}
+                    aria-label={s.name}
+                  >
+                    <i className={`fab ${s.icon}`}></i>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -56,13 +62,13 @@ function Footer() {
             </div>
           </div>
 
-          {/* Coluna 4 - Menu do footer (links visuais, sem rota) */}
+          {/* Coluna 4 - Menu do footer */}
           <div>
             <ul className={styles.footerMenu}>
-              <li><span>Fale conosco</span></li>
-              <li><span>Créditos</span></li>
-              <li><span>Política de Privacidade</span></li>
-              <li><span>Termos</span></li>
+              <li><Link to="/fale-conosco">Fale conosco</Link></li>
+              <li><Link to="/creditos">Créditos</Link></li>
+              <li><Link to="/privacidade">Política de Privacidade</Link></li>
+              <li><Link to="/termos">Termos</Link></li>
             </ul>
           </div>
         </div>

@@ -1,4 +1,4 @@
-// Página de detalhe da notícia: "The Beatles Get Back to Savile Row!"
+// Página de detalhe da notícia: "Os Beatles Retornam à Savile Row!"
 // Layout: 3 colunas (esquerda vazia / centro conteúdo / direita vazia)
 import { Link } from 'react-router-dom'
 import styles from './NewsDetail.module.css'
@@ -18,10 +18,10 @@ function NewsDetail() {
             <div className={styles.pageTitleBlock}>
               <p className={styles.preTitle}>Notícia - 11 de maio de 2026</p>
               <h1 className={styles.h1Title}>
-                The Beatles Get Back to Savile Row!&nbsp;
+                Os Beatles voltam a Savile Row!&nbsp;
               </h1>
               <p className={styles.subtitle}>
-                <strong>“The Beatles at 3 Savile Row” Opening to Public in 2027&nbsp;</strong>
+                <strong>“The Beatles na 3 Savile Row” será aberto ao público em 2027&nbsp;</strong>
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ function NewsDetail() {
             <div className={styles.videoEmbed}>
               <iframe
                 src="https://www.youtube.com/embed/mO_elwwWr-E"
-                title="The Beatles at Savile Row"
+                title="The Beatles na Savile Row"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -51,23 +51,27 @@ function NewsDetail() {
 
             {/* Texto introdutório em itálico */}
             <p className={styles.introText}>
-              <em>First ever official destination for Beatles Fans in the heart of London</em>
+              <em>Primeiro destino oficial para fãs dos Beatles no coração de Londres</em>
             </p>
 
             <p className={styles.introText}>
-              <em>3 Savile Row is one of the most famous locations in The Beatles storied history as Apple Corps previous HQ, the recording studio for Let it Be and the location of the legendary Rooftop Concert&nbsp;</em>
+              <em>
+                A 3 Savile Row é um dos locais mais famosos da história dos Beatles, tendo sido a antiga sede da Apple Corps, o estúdio de gravação do álbum Let It Be e o palco do lendário Concerto no Telhado.&nbsp;
+              </em>
             </p>
 
             <p className={styles.introText}>
-              <em>The ticketed experience will give Beatles fans access to seven floors of never-seen-before archive, rotating exhibits, the recreated recording studio in the basement and the famous rooftop&nbsp;</em>
+              <em>
+                A experiência com ingresso dará aos fãs dos Beatles acesso a sete andares de arquivos nunca antes vistos, exposições rotativas, ao estúdio de gravação recriado no subsolo e ao famoso telhado.&nbsp;
+              </em>
             </p>
 
             <p className={styles.introText}>
-              <em>Register at </em>
+              <em>Cadastre-se em </em>
               <a href="https://www.thebeatles.com/3savilerow" target="_blank" rel="noreferrer noopener">
                 https://www.thebeatles.com/3SavileRow
               </a>
-              <em> for further news&nbsp;</em>
+              <em> para receber mais novidades.&nbsp;</em>
             </p>
           </div>
 

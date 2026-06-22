@@ -2,29 +2,24 @@ import React, { useState } from 'react';
 import styles from './HereComesTheSunDetail.module.css';
 
 function HereComesTheSunDetail() {
-  // useState para o botão "Read more" da tabela
   const [tableExpanded, setTableExpanded] = useState(false);
 
   return (
     <div className={styles.page}>
 
-      {/* PAGE TITLE SECTION - centered */}
       <div className={styles.pageTitleSection}>
         <div className={styles.pageTitleInner}>
-          <p className={styles.preTitle}>Song</p>
+          <p className={styles.preTitle}>Música</p>
           <h1 className={styles.pageTitle}>Here Comes The Sun</h1>
           <p className={styles.subtitle}>
-            <span className={styles.fontHeavy}>Release date:</span> 26 September 1969
+            <span className={styles.fontHeavy}>Data de lançamento:</span> 26 de setembro de 1969
           </p>
         </div>
       </div>
 
-      {/* MAIN CONTENT SECTION - lyrics + sidebar */}
       <div className={styles.contentSection}>
         <div className={styles.contentInner}>
-          {/* MAIN COLUMN - lyrics + table + description */}
           <div className={styles.mainColumn}>
-            {/* Lyrics */}
             <div className={styles.lyrics}>
               <p>
                 Here comes the sun<br />
@@ -84,7 +79,6 @@ function HereComesTheSunDetail() {
               <p>It's alright</p>
             </div>
 
-            {/* Info table with "Read more" expander */}
             <div className={styles.tableWrapper}>
               <table className={styles.infoTable}>
                 <tbody>
@@ -93,64 +87,63 @@ function HereComesTheSunDetail() {
                   </tr>
                   <tr>
                     <td colSpan={2} className={styles.tableImageCell}>
-                      Cover to Japanese single
+                      Capa do single japonês
                     </td>
                   </tr>
                   <tr>
-                    <th colSpan={2}>Single by The Beatles</th>
+                    <th colSpan={2}>Single de The Beatles</th>
                   </tr>
                   <tr>
-                    <th colSpan={2}>from the album Abbey Road</th>
+                    <th colSpan={2}>do álbum Abbey Road</th>
                   </tr>
                   <tr>
-                    <th scope="row">A-side</th>
+                    <th scope="row">Lado A</th>
                     <td>"Oh! Darling"</td>
                   </tr>
                   <tr>
-                    <th scope="row">Released</th>
+                    <th scope="row">Lançamento</th>
                     <td>
-                      26 September 1969 (album)
+                      26 de setembro de 1969 (álbum)
                       <br />
-                      5 June 1970 (Japan single)
+                      5 de junho de 1970 (single no Japão)
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Recorded</th>
-                    <td>7 July - 19 August 1969</td>
+                    <th scope="row">Gravação</th>
+                    <td>7 de julho – 19 de agosto de 1969</td>
                   </tr>
                   <tr>
-                    <th scope="row">Genre</th>
+                    <th scope="row">Gênero</th>
                     <td>Folk rock, pop rock</td>
                   </tr>
                   <tr>
-                    <th scope="row">Length</th>
+                    <th scope="row">Duração</th>
                     <td>3:05</td>
                   </tr>
                   <tr>
-                    <th scope="row">Label</th>
+                    <th scope="row">Gravadora</th>
                     <td>Apple</td>
                   </tr>
                   <tr>
-                    <th scope="row">Writer(s)</th>
+                    <th scope="row">Compositor(es)</th>
                     <td>George Harrison</td>
                   </tr>
                   <tr>
-                    <th scope="row">Producer</th>
+                    <th scope="row">Produtor</th>
                     <td>George Martin</td>
                   </tr>
 
-                  {/* Extra content hidden behind "Read more" */}
                   {tableExpanded && (
                     <>
                       <tr>
-                        <th colSpan={2}>Abbey Road track listing</th>
+                        <th colSpan={2}>Lista de faixas de Abbey Road</th>
                       </tr>
                       <tr>
                         <td colSpan={2}>
-                          <strong>17 tracks</strong>
+                          <strong>17 faixas</strong>
                           <div className={styles.trackList}>
                             <div>
-                              <strong>Side one</strong>
+                              <strong>Lado um</strong>
                               <ol>
                                 <li>"Come Together"</li>
                                 <li>"Something"</li>
@@ -161,7 +154,7 @@ function HereComesTheSunDetail() {
                               </ol>
                             </div>
                             <div>
-                              <strong>Side two</strong>
+                              <strong>Lado dois</strong>
                               <ol>
                                 <li>"Here Comes the Sun"</li>
                                 <li>"Because"</li>
@@ -184,7 +177,6 @@ function HereComesTheSunDetail() {
                 </tbody>
               </table>
 
-              {/* Read more / Read less button */}
               <div className={styles.readMoreContainer}>
                 <button
                   className={styles.readMoreButton}
@@ -199,31 +191,29 @@ function HereComesTheSunDetail() {
               </div>
             </div>
 
-            {/* Description text */}
             <div className={styles.descriptionSection}>
               <p className={styles.bodyText}>
-                "Here Comes the Sun" is a song by George Harrison from the Beatles' 1969 album Abbey Road.
+                "Here Comes the Sun" é uma música de George Harrison do álbum Abbey Road dos Beatles, lançado em 1969.
               </p>
 
               <p className={styles.copyright}>
-                ©2006 Sony/ATV Music Publishing LLC. All rights reserved. Used by permission.
+                ©2006 Sony/ATV Music Publishing LLC. Todos os direitos reservados. Usado com permissão.
               </p>
             </div>
           </div>
 
-          {/* RIGHT SIDEBAR - Related Articles */}
           <aside className={styles.sidebar}>
             <h2 className={styles.sidebarTitle}>Artigos relacionados</h2>
 
             <div className={styles.relatedItem}>
-              <p className={styles.relatedPreTitle}>Song</p>
+              <p className={styles.relatedPreTitle}>Música</p>
               <a href="/i-got-find-my-baby" className={styles.relatedLink}>
                 I Got To Find My Baby
               </a>
             </div>
 
             <div className={styles.relatedItem}>
-              <p className={styles.relatedPreTitle}>Song</p>
+              <p className={styles.relatedPreTitle}>Música</p>
               <a href="/ill-be-my-way" className={styles.relatedLink}>
                 I'll Be On My Way
               </a>

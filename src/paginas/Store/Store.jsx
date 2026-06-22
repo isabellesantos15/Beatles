@@ -9,28 +9,28 @@ const regions = [
     id: 1,
     flag: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2021-08/UK_EU_Flag.jpeg?itok=3jm44Qd8',
     alt: 'Bandeira do Reino Unido / UE',
-    title: 'UK Store',
+    title: 'Loja do Reino Unido',
     link: 'https://ukstore.thebeatles.com/',
   },
   {
     id: 2,
     flag: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2021-08/us_flag.png?itok=VRRwyaKT',
     alt: 'Bandeira dos EUA',
-    title: 'North American Store',
+    title: 'Loja da América do Norte',
     link: 'https://usastore.thebeatles.com/',
   },
   {
     id: 3,
     flag: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2021-08/jp_flag.png?itok=vjLs5HIb',
     alt: 'Bandeira do Japão',
-    title: 'Japan Store',
+    title: 'Loja do Japão',
     link: 'https://the-beatles-store.jp/',
   },
   {
     id: 4,
     flag: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2023-10/Beatles_white.jpg?itok=ujvk5BM9',
     alt: 'Logo dos Beatles',
-    title: 'Rest of World',
+    title: 'Resto do Mundo',
     link: 'https://TheBeatles.lnk.to/StoreROWWE',
   },
 ];
@@ -38,13 +38,13 @@ const regions = [
 const products = [
   {
     id: 1,
-    title: 'The Beatles Anthology Book 2025. Out Now.',
+    title: 'The Beatles Anthology Book 2025. Já disponível.',
     image: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2025-10/The%20Beatles%20Anthology_on%20black%20angle%20upright.jpg?itok=4CNHBFej',
     route: '/store/beatles-anthology-book-2025-out-now',
   },
   {
     id: 2,
-    title: 'The Beatles Anthology 12LP Official Store Exclusive',
+    title: 'The Beatles Anthology 12LP Exclusivo da Loja Oficial',
     image: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2025-08/Anthology_ProductShot_Vinyl_OCard_D2C_sq.jpg?itok=MDWYXLvh',
   },
   {
@@ -54,7 +54,7 @@ const products = [
   },
   {
     id: 4,
-    title: 'The Beatles Anthology 8CD Official Store Exclusive',
+    title: 'The Beatles Anthology 8CD Exclusivo da Loja Oficial',
     image: 'https://www.thebeatles.com/sites/default/files/styles/responsive_thumbnail_mobile/public/2025-08/Anthology_ProductShot_CD_OCard_D2C_sq_0.jpg?itok=Z7sZ5qMy',
   },
 ];

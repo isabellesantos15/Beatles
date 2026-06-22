@@ -22,6 +22,10 @@ import Newsletter from './paginas/Newsletter/Newsletter.jsx'
 import PleasePleaseMeDetail from './paginas/PleasePleaseMeDetail/PleasePleaseMeDetail.jsx'
 import HardDaysNightDetail from './paginas/HardDaysNightDetail/HardDaysNightDetail.jsx'
 import HereComesTheSunDetail from './paginas/HereComesTheSunDetail/HereComesTheSunDetail.jsx'
+import Privacidade from './paginas/Privacidade/Privacidade.jsx'
+import Termos from './paginas/Termos/Termos.jsx'
+import FaleConosco from './paginas/FaleConosco/FaleConosco.jsx'
+import Creditos from './paginas/Creditos/Creditos.jsx'
 
 function App() {
   return (
@@ -53,6 +57,10 @@ function App() {
           <Route path="/store/beatles-anthology-book-2025-out-now" element={<BeatlesAnthologyBook />} />
           <Route path="/mono-vinyl" element={<MonoVinyl />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/privacidade" element={<Privacidade />} />
+          <Route path="/termos" element={<Termos />} />
+          <Route path="/fale-conosco" element={<FaleConosco />} />
+          <Route path="/creditos" element={<Creditos />} />
         </Routes>
       </main>
 

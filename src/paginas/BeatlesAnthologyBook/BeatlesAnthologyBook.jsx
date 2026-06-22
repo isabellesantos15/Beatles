@@ -13,8 +13,8 @@ function BeatlesAnthologyBook() {
 
           <div className={styles.titleColumn}>
             <div className={styles.titleInner}>
-              <p className={styles.preTitle}>News - 14 October 2025</p>
-              <h1 className={styles.pageTitle}>The Beatles Anthology Book 2025. Out Now.</h1>
+              <p className={styles.preTitle}>Notícias - 14 de outubro de 2025</p>
+              <h1 className={styles.pageTitle}>The Beatles Anthology Book 2025. Já disponível.</h1>
               <p className={styles.subtitle}></p>
             </div>
           </div>
@@ -47,45 +47,44 @@ function BeatlesAnthologyBook() {
 
             {/* Texto descritivo */}
             <p className={styles.bodyText}>
-              <em>✮OUT TODAY!✮ The Beatles Anthology is now available everywhere you find books, online and in-stores in the U.S.!</em>
+              <em>✮JÁ DISPONÍVEL HOJE!✮ The Beatles Anthology já está disponível em todos os lugares onde você encontra livros, online e em lojas nos EUA!</em>
             </p>
 
             <p className={styles.bodyText}>
-              <em>The Beatles Anthology tells the complete story of The Beatles. John, Paul, George and Ringo share their honest, intimate and revelatory recollections of the band's journey. From growing up in Liverpool, to becoming a global phenomenon and their ultimate breakup, here's the inside story.</em>
+              <em>The Beatles Anthology conta a história completa dos The Beatles. John, Paul, George e Ringo compartilham suas lembranças honestas, íntimas e reveladoras da jornada da banda. De sua infância em Liverpool até se tornarem um fenômeno global e sua separação definitiva, aqui está a história por dentro.</em>
             </p>
 
             <p className={styles.bodyText}>
-              <em>Arranged by year, the book is illustrated with over 1300 images, including photographs, documents, and other memorabilia from their personal collections and the band's archives.</em>
+              <em>Organizado por ano, o livro é ilustrado com mais de 1300 imagens, incluindo fotografias, documentos e outras lembranças de suas coleções pessoais e dos arquivos da banda.</em>
             </p>
 
             <p className={styles.bodyText}>
-              <em>This once-in-a-lifetime volume is the perfect gift for all fans of the legendary band that inspired generations.</em>
+              <em>Este volume único na vida é o presente perfeito para todos os fãs da lendária banda que inspirou gerações.</em>
             </p>
 
             <p className={styles.bodyText}>
-              <em>📣Stay tuned, UK fans! The book releases soon on 10/23/2025</em>
+              <em>📣Fiquem ligados, fãs do Reino Unido! O livro será lançado em breve em 23/10/2025</em>
             </p>
 
             {/* Botão verde "Order Your Copy" */}
             <div className={styles.buttonContainer}>
               <a
                 className={styles.orderButton}
-      
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Order Your Copy
+                Peça o seu exemplar
               </a>
             </div>
           </div>
 
           {/* Sidebar direita - Related Articles */}
           <aside className={styles.rightColumn}>
-            <h2 className={styles.sidebarTitle}>Related Articles</h2>
+            <h2 className={styles.sidebarTitle}>Artigos relacionados</h2>
 
             <div className={styles.relatedItem}>
               <div className={styles.relatedText}>
-                <p className={styles.relatedPreTitle}>Product</p>
+                <p className={styles.relatedPreTitle}>Produto</p>
                 <a className={styles.relatedLink}>
                   The Beatles Anthology 4: 3LP
                 </a>
@@ -100,7 +99,7 @@ function BeatlesAnthologyBook() {
 
             <div className={styles.relatedItem}>
               <div className={styles.relatedText}>
-                <p className={styles.relatedPreTitle}>Product</p>
+                <p className={styles.relatedPreTitle}>Produto</p>
                 <a className={styles.relatedLink}>
                   The Beatles Anthology 4: 2CD
                 </a>
