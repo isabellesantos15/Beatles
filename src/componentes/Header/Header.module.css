@@ -1,0 +1,217 @@
+/* Header igual ao site original: fundo claro, logo + nav inline, hambúrguer no mobile */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4F1E9;
+  z-index: 1000;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+}
+
+.headerInner {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .navWrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+.brandCol {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.logo svg {
+  height: 32px;
+  width: auto;
+}
+
+/* Nav desktop: aparece a partir de 992px (PC) - à direita da logo, mesmo nível */
+.desktopNav {
+  display: none;
+  list-style: none;
+  margin: 0 0 0 30px;
+  padding: 0;
+  align-items: center;
+  gap: 0;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.desktopLink {
+  display: block;
+  padding: 8px 14px;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  color: #000;
+  transition: color 0.2s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.desktopLink:hover {
+  color: var(--color-red);
+}
+
+.desktopLink.active {
+  color: var(--color-red);
+}
+
+/* Botão hambúrguer (esconde no PC, mostra só no mobile) */
+.hamburgerCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Quando o menu está aberto, o hambúrguer vira um X */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Painel do menu mobile (abre pela direita) */
+.menuPanel {
+  position: fixed;
+  top: 88px;
+  right: 0;
+  width: 320px;
+  max-width: 100%;
+  height: calc(100vh - 88px);
+  background-color: #fff;
+  border-left: 1px solid #eee;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1001;
+}
+
+@media (min-width: 992px) {
+  .menuPanel {
+    display: none;
+  }
+}
+
+.menuPanel.open {
+  transform: translateX(0);
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  border-bottom: 1px solid #eee;
+}
+
+.menuLink {
+  display: block;
+  padding: 18px 0;
+  font-size: 19px;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #000;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.menuLink:hover {
+  color: var(--color-red);
+}
+
+/* Fundo escuro atrás do menu mobile */
+.overlay {
+  position: fixed;
+  top: 88px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (min-width: 992px) {
+  .overlay {
+    display: none;
+  }
+}

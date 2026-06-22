@@ -1,0 +1,252 @@
+/* Happy Birthday Paul 5 - cópia fiel do site original thebeatles.com */
+.page {
+  background-color: #F4F1E9;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  min-height: calc(100vh - 60px);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.contentRow {
+  margin-top: 0;
+}
+
+.sideCol {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sideCol {
+    display: block;
+    width: 8.333333%;
+  }
+}
+
+.mainCol {
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .mainCol {
+    width: 83.333333%;
+  }
+}
+
+.contentCol {
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .contentCol {
+    width: 66.666667%;
+    margin: 0 auto;
+  }
+}
+
+/* Imagem principal (mesma do home) */
+.heroImageWrap {
+  width: 100%;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Título principal "Celebrating a master songwriter" */
+.mainHeading {
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .mainHeading {
+    font-size: 48px;
+    margin: 1rem 0;
+  }
+}
+
+/* Texto "lead" (parágrafos grandes centralizados) */
+.lead {
+  font-family: "helvetica-neue-lt-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .lead {
+    font-size: 18px;
+  }
+}
+
+/* Espaçadores */
+.spacer51 {
+  height: 51px;
+}
+
+.spacer61 {
+  height: 61px;
+}
+
+/* Embed do Instagram */
+.instagramWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.instagramFrame {
+  background: white;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
+  min-width: 326px;
+  padding: 0;
+}
+
+/* Separador vermelho (igual ao site original) */
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #791510;
+  color: #791510;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  opacity: 1;
+}
+
+/* Títulos de seção (h2) */
+.sectionHeading {
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .sectionHeading {
+    font-size: 28px;
+  }
+}
+
+/* Link/Imagem do wallpaper */
+.wallpaperLink {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin: 0 auto 20px;
+}
+
+.wallpaperImage {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Imagem do The Boys of Dungeon Lane */
+.tbodlImage {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+/* Texto de instruções */
+.instructions {
+  font-family: "helvetica-neue-lt-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  margin: 16px 0 0;
+  line-height: 1.6;
+}
+
+/* Spotify embed */
+.spotifyFigure {
+  margin: 0;
+  padding: 0;
+}
+
+.spotifyWrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spotifyWrap iframe {
+  display: block;
+  width: 100%;
+}
+
+/* Botão verde grande (mesmo do home) */
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.greenButton {
+  display: inline-block;
+  background-color: #579A18;
+  color: #FFFFFF;
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 40px;
+  line-height: 1.2;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.greenButton:hover {
+  background-color: #4a8514;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .greenButton {
+    font-size: 16px;
+    padding: 14px 24px;
+    width: 100%;
+  }
+}

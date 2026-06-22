@@ -1,0 +1,359 @@
+.page {
+  min-height: 100vh;
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Social Share Button Launcher */
+.socialShareLauncher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #579a18;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.socialShareLauncher:hover {
+  background: #4d8a16;
+  text-decoration: none;
+  color: white;
+}
+
+/* PAGE TITLE SECTION - centered, similar to film banner but no image */
+.pageTitleSection {
+  background-color: #f8f9fa;
+  padding: 60px 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.pageTitleInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.preTitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #666;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+  color: #555;
+  font-weight: normal;
+}
+
+.fontHeavy {
+  font-weight: bold;
+}
+
+/* MAIN CONTENT SECTION */
+.contentSection {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+.contentInner {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+/* LEFT COLUMN - QUOTES ONLY */
+.quotesColumn {
+  width: 340px;
+  flex-shrink: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.quotesSection {
+  margin-bottom: 30px;
+}
+
+.blockquote {
+  background: #f8f9fa;
+  border-left: 4px solid #ddd;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.blockquote p {
+  margin: 0 0 10px 0;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.blockquote footer {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: right;
+  font-weight: bold;
+  display: block;
+}
+
+/* RIGHT COLUMN - ALBUM COVER, TEXT, VIDEOS */
+.bodyColumn {
+  flex: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-200px);
+}
+
+/* Album cover image */
+.albumCover {
+  margin: 0 0 25px 0;
+}
+
+.albumCover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Spotify embed */
+.spotifyEmbed {
+  margin: 0 0 25px 0;
+  width: 100%;
+}
+
+.spotifyEmbed iframe {
+  display: block;
+  width: 100%;
+}
+
+/* Action buttons (STREAM / BUY THE ALBUM) */
+.buttonsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 0 30px 0;
+}
+
+.actionButton {
+  display: inline-block;
+  background-color: #579a18;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #4d8a16;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Description text */
+.descriptionSection {
+  margin-bottom: 30px;
+}
+
+.bodyText {
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* VIDEO EMBED */
+.videoEmbed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  margin: 0 0 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.videoEmbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* NME SECTION - centered image + blockquote */
+.nmeSection {
+  background-color: #f8f9fa;
+  padding: 30px 20px 40px;
+}
+
+.nmeInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nmeImage {
+  margin: 0 0 30px 0;
+}
+
+.nmeImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nmeQuote {
+  background: transparent;
+  border: 0;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.nmeQuote p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0 0 15px 0;
+}
+
+.nmeQuote cite {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* IMAGE SLIDESHOW - one image almost full screen with peek of next */
+.imagesSection {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.imagesInner {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 0 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.imageScrollSlide {
+  flex: 0 0 52%;
+  min-width: 52%;
+  scroll-snap-align: start;
+}
+
+.imageScrollSlide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 767px) {
+  .contentInner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quotesColumn {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .bodyColumn {
+    flex: 1;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    transform: none;
+  }
+
+  .pageTitle {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .imagesInner {
+    flex-direction: row;
+    gap: 6px;
+    padding: 0 12px;
+  }
+
+  .imageScrollSlide {
+    flex: 0 0 92%;
+    min-width: 92%;
+  }
+
+  .imageScrollSlide img {
+    height: auto;
+  }
+
+  .blockquote {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .blockquote p {
+    font-size: 1rem;
+  }
+
+  .socialShareLauncher {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .buttonsRow {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    text-align: center;
+    width: 100%;
+  }
+}

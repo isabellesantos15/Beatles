@@ -1,0 +1,111 @@
+/* CartaoItem - card genérico reutilizável
+   Atende o requisito visual: borda arredondada, sombra, object-fit: cover,
+   paleta de 3 cores (peach/red/green), tipografia legível. */
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagem com proporção consistente e object-fit: cover */
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fcd4b9, #ab504d);
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .imagem {
+  transform: scale(1.04);
+}
+
+/* Badge de status (Disponível/Indisponível) */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "futura-pt", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.badgeOn {
+  background: #51a349;
+}
+
+.badgeOff {
+  background: #838383;
+}
+
+/* Corpo do card com padding e hierarquia */
+.body {
+  padding: 16px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "futura-pt", sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.cat {
+  background: #f4f1e9;
+  color: #494949;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

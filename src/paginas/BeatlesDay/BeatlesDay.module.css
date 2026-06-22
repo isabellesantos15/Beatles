@@ -1,0 +1,104 @@
+/* Global Beatles Day - fundo peach igual ao original */
+.page {
+  background-color: var(--color-peach);
+  padding: 60px 0;
+}
+
+.title {
+  font-family: "futura-pt", sans-serif;
+  color: var(--color-dark-red);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.text {
+  color: var(--color-dark-red);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* Faixa vermelha no meio */
+.redBand {
+  background-color: var(--color-red);
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.redBand h2 {
+  font-family: "futura-pt", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.redBand p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #fff;
+  color: var(--color-red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 2px solid #fff;
+  transition: all 0.2s;
+}
+
+.cta:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.section {
+  padding: 60px 0;
+  background-color: var(--color-peach);
+}
+
+.sectionTitle {
+  font-family: "futura-pt", sans-serif;
+  color: var(--color-dark-red);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: 50%;
+  }
+}

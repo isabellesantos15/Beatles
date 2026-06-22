@@ -1,0 +1,53 @@
+/* GridPage - layout de página com grid de cards responsivo.
+   Hoje é só um wrapper de layout: o card em si vem do componente CartaoItem. */
+
+.page {
+  padding: 60px 0;
+}
+
+.pageTitle {
+  font-family: "futura-pt", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.pageSubtitle {
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.toolbar {
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 576px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 16px;
+}

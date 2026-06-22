@@ -1,0 +1,146 @@
+/* Footer com 4 colunas em desktop */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0 30px;
+  margin-top: 0;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .footerGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Coluna 1 - logo Apple Corps */
+.appleLogo {
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #999;
+}
+
+.appleLogo strong {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* Coluna 2 - redes sociais */
+.socialTitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.socialList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+}
+
+.socialList li a,
+.socialList li .socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: background 0.2s;
+  color: #fff;
+}
+
+.socialList li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.socialIcon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Coluna 3 - busca */
+.searchTitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.searchForm {
+  display: flex;
+  border-bottom: 1px solid #fff;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.searchButton {
+  color: #fff;
+  padding: 8px 0 8px 12px;
+  font-size: 16px;
+}
+
+/* Coluna 4 - menu do footer */
+.footerMenu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerMenu li a,
+.footerMenu li span {
+  font-size: 14px;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.footerMenu li a:hover {
+  color: #fcd4b9;
+}
+
+/* Copyright embaixo */
+.copyright {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
